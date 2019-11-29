@@ -87,7 +87,7 @@
         app:itemIconTint="@drawable/bottom_nav_item_tint"
         app:itemTextColor="@drawable/bottom_nav_item_tint"
         app:labelVisibilityMode="unlabeled"
-        app:layout_behavior="com.megazone.base.ui.view.behavior.BottomNavigationBehavior"
+        app:layout_behavior="com.goforer.base.ui.view.behavior.BottomNavigationBehavior"
         app:layout_insetEdge="bottom"
         app:layout_scrollFlags="scroll|enterAlways"
         app:menu="@menu/bottom_nav_menu" />

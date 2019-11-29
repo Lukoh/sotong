@@ -6,7 +6,7 @@
     android:focusable="true"
     android:focusableInTouchMode="true">
 
-    <com.megazone.base.ui.view.customs.layout.SwipeRefreshLayout
+    <com.goforer.base.ui.view.customs.layout.SwipeRefreshLayout
         android:id="@+id/swipe_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -30,6 +30,6 @@
             android:paddingTop="@dimen/padding_2"
             android:paddingBottom="@dimen/padding_2" />
 
-    </com.megazone.base.ui.view.customs.layout.SwipeRefreshLayout>
+    </com.goforer.base.ui.view.customs.layout.SwipeRefreshLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

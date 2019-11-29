@@ -2,6 +2,6 @@ package androidx.databinding;
 
 public class DataBinderMapperImpl extends MergedDataBinderMapper {
   DataBinderMapperImpl() {
-    addMapper(new com.megazone.megatong.DataBinderMapperImpl());
+    addMapper(new com.goforer.sotong.DataBinderMapperImpl());
   }
 }

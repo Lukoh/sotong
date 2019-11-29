@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_192">
 
-            <com.megazone.base.ui.view.customs.imageview.ThreeTwoImageView
+            <com.goforer.base.ui.view.customs.imageview.ThreeTwoImageView
                 android:id="@+id/iv_snap_photo"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
