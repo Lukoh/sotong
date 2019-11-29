@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Megatong</string>
+
+    <string name="not_connected_internet">No Internet connection</string>
+    <string name="check_connection">Check your connection again</string>
+    <string name="phrase_permission_cancel">Permission Cancelled!</string>
+    <string name="splash_title">Share the memory you have seen in MEGAZONE.</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_feed">Feed</string>
+    <string name="title_posting">Posting</string>
+    <string name="title_pop_feed">Pop Feed</string>
+    <string name="no_name">No Name</string>
+    <string name="no_id">No ID</string>
+    <string name="menu_confirm">Confirm</string>
+    <string name="menu_profile">Profile</string>
+    <string name="feed_posting">Feed Posting</string>
+    <string name="uploading">Uploading…</string>
+    <string name="my_profile">My Profile</string>
+    <string name="new_posting">New Feed Posting</string>
+    <string name="no_description">Please input the content of the </string>
+
+    <string name="phrase_client_wrong_request">sorry! There seems to be something wrong with the user request.</string>
+    <string name="phrase_no_media_file">There is no file. Please check it out.</string>
+    <string name="phrase_server_wrong_response">Sorry! There seems to be something wrong with the Megatong server connection.</string>
+    <string name="phrase_posting_success">The Feed posting is completed.</string>
+    <string name="phrase_posting_failed">The Feed posting is failed.</string>
+
+    <string name="phrase_pop_feed">Pop Feed</string>
+</resources>

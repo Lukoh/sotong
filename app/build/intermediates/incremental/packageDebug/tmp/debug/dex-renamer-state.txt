@@ -1,0 +1,13 @@
+#Fri Nov 29 09:55:15 KST 2019
+path.3=classes2.dex
+path.2=classes1000.dex
+path.1=classes.dex
+path.0=classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.3=/Users/mz01-namkulho/StudioProjects/Megatong/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+base.2=/Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/63dea68900898c0e5959c0177e305256/desugar_jdk_libs-1.0.1/classes1000.dex
+base.1=/Users/mz01-namkulho/StudioProjects/Megatong/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
+base.0=/Users/mz01-namkulho/StudioProjects/Megatong/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex

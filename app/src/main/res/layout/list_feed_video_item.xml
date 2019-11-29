@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/feed_video_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:visibility="visible">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_feed_video_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="0dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="3dp"
+        card_view:cardPreventCornerOverlap="false">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/feed_video_item_constraintLayoutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.mikepenz.materialdrawer.view.BezelImageView
+                android:id="@+id/iv_video_item_user"
+                android:layout_width="@dimen/width_40"
+                android:layout_height="@dimen/height_40"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_video_item_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginStart="@dimen/margin_12"
+                android:layout_marginTop="@dimen/margin_17"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="@dimen/text_max_length_12"
+                android:textAppearance="@android:style/TextAppearance.Material.Headline"
+                android:textColor="@color/blackHard"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/iv_video_item_user"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_video_item_email_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginStart="@dimen/margin_12"
+                android:layout_marginTop="@dimen/margin_37"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="@dimen/text_max_length_12"
+                android:textAppearance="@android:style/TextAppearance.Material.Headline"
+                android:textColor="@color/grayDark"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/iv_video_item_user"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_video_item_badge"
+                android:layout_width="@dimen/width_40"
+                android:layout_height="@dimen/height_40"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/player_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:minHeight="@dimen/height_231"
+                app:player_layout_id="@layout/toro_exo_player_view"
+                app:resize_mode="fixed_height"
+                app:surface_type="texture_view"
+                app:use_controller="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_video_item_user" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_video_item_like"
+                android:layout_width="@dimen/width_18"
+                android:layout_height="@dimen/height_16"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="@dimen/margin_18"
+                android:layout_marginStart="@dimen/margin_16"
+                android:src="@drawable/ic_like_n"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/player_view" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_video_item_like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_19"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginStart="@dimen/margin_39"
+                android:layout_marginTop="@dimen/margin_18"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="@dimen/text_max_length_12"
+                android:textAppearance="@android:style/TextAppearance.Material.Headline"
+                android:textColor="@color/grayDark"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/player_view" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_video_item_delete"
+                android:layout_width="@dimen/width_18"
+                android:layout_height="@dimen/height_16"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="@dimen/margin_18"
+                android:layout_marginEnd="@dimen/margin_119"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/player_view" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_video_item_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_19"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="@dimen/margin_18"
+                android:layout_marginEnd="@dimen/margin_116"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="@dimen/text_max_length_12"
+                android:textAppearance="@android:style/TextAppearance.Material.Headline"
+                android:textColor="@color/grayDarkHard"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/player_view" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_video_item_edit"
+                android:layout_width="@dimen/width_18"
+                android:layout_height="@dimen/height_16"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="@dimen/margin_18"
+                android:layout_marginEnd="@dimen/margin_53"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/player_view" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_video_item_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_19"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="@dimen/margin_18"
+                android:layout_marginEnd="@dimen/margin_50"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="@dimen/text_max_length_12"
+                android:textAppearance="@android:style/TextAppearance.Material.Headline"
+                android:textColor="@color/grayDarkHard"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/player_view" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_video_item_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height_50"
+                android:maxHeight="@dimen/height_75"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_14"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="@dimen/text_max_length_128"
+                android:maxLines="@dimen/text_line_4"
+                android:textAppearance="@android:style/TextAppearance.Material.Headline"
+                android:textColor="@color/grayDarkHard"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_video_item_like" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,614 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.megazone.megatong"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:maxSdkVersion="29"
+8-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml
+9        android:minSdkVersion="23"
+9-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:6:5-67
+12-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:7:5-76
+13-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:7:22-73
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:8:5-79
+14-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="android.permission.READ_CONTACTS" />
+15-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:9:5-72
+15-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:9:22-69
+16    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+16-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:10:5-73
+16-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:10:22-70
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:11:5-65
+17-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:11:22-62
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:12:5-81
+18-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:12:22-78
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+19-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:13:5-80
+19-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:13:22-77
+20
+21    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+21-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:15:5-79
+21-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:15:26-76
+22    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+22-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:16:5-71
+22-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:16:22-68
+23    <uses-permission android:name="android.permission.READ_PROFILE" />
+23-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:17:5-71
+23-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:17:22-68
+24
+25    <uses-feature
+25-->[com.google.android.gms:play-services-maps:17.0.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9e208fd1aeb225d33fea9aecb916f6a6/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+26        android:glEsVersion="0x00020000"
+26-->[com.google.android.gms:play-services-maps:17.0.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9e208fd1aeb225d33fea9aecb916f6a6/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+27        android:required="true" /> <!-- Required by older versions of Google Play services to create GCM registration tokens -->
+27-->[com.google.android.gms:play-services-maps:17.0.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9e208fd1aeb225d33fea9aecb916f6a6/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+28    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+28-->[com.google.android.gms:play-services-gcm:17.0.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/b09fba0f4451d5e26ff41bc2f057a9a1/jetified-play-services-gcm-17.0.0/AndroidManifest.xml:23:5-82
+28-->[com.google.android.gms:play-services-gcm:17.0.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/b09fba0f4451d5e26ff41bc2f057a9a1/jetified-play-services-gcm-17.0.0/AndroidManifest.xml:23:22-79
+29    <uses-permission android:name="android.permission.WAKE_LOCK" />
+29-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/21f65e4f35bbcaf9a923927450dbad13/jetified-play-services-measurement-api-17.2.1/AndroidManifest.xml:24:5-68
+29-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/21f65e4f35bbcaf9a923927450dbad13/jetified-play-services-measurement-api-17.2.1/AndroidManifest.xml:24:22-65
+30    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+30-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:26:5-110
+30-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:26:22-107
+31    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+31-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:27:5-81
+31-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:27:22-78
+32    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+32-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:28:5-77
+32-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:28:22-74
+33
+34    <application
+34-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:19:5-69:19
+35        android:name="com.megazone.megatong.Megatong"
+35-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:20:9-33
+36        android:allowBackup="false"
+36-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:21:9-36
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.1.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/c0b0eedadc6ca822e75a9586dff337d9/core-1.1.0/AndroidManifest.xml:24:18-86
+38        android:debuggable="true"
+39        android:extractNativeLibs="false"
+40        android:icon="@mipmap/ic_launcher"
+40-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:22:9-43
+41        android:label="@string/app_name"
+41-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:23:9-41
+42        android:largeHeap="true"
+42-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:24:9-33
+43        android:roundIcon="@mipmap/ic_launcher_round"
+43-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:25:9-54
+44        android:supportsRtl="true"
+44-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:26:9-35
+45        android:testOnly="true"
+46        android:theme="@style/AppTheme" >
+46-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:27:9-40
+47        <activity
+47-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:30:9-42:20
+48            android:name="com.megazone.megatong.presentation.ui.splash.SplashActivity"
+48-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:31:13-87
+49            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+49-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:34:13-96
+50            android:exported="true"
+50-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:35:13-36
+51            android:launchMode="singleTop"
+51-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:32:13-43
+52            android:screenOrientation="fullSensor"
+52-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:33:13-51
+53            android:theme="@style/AppTheme.NoActionBar" >
+53-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:36:13-56
+54            <intent-filter>
+54-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:37:13-41:29
+55                <action android:name="android.intent.action.MAIN" />
+55-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:38:17-69
+55-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:38:25-66
+56
+57                <category android:name="android.intent.category.LAUNCHER" />
+57-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:40:17-77
+57-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:40:27-74
+58            </intent-filter>
+59        </activity>
+60        <activity
+60-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:44:9-48:64
+61            android:name="com.megazone.megatong.presentation.ui.home.HomeActivity"
+61-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:45:13-83
+62            android:launchMode="singleTop"
+62-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:46:13-43
+63            android:screenOrientation="unspecified"
+63-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:47:13-52
+64            android:theme="@style/AppTheme.NoActionBar.Home" />
+64-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:48:13-61
+65        <activity
+65-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:50:9-56:59
+66            android:name="com.megazone.megatong.presentation.ui.login.LogInActivity"
+66-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:51:13-85
+67            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+67-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:54:13-96
+68            android:label="@string/app_name"
+68-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:55:13-45
+69            android:launchMode="singleTop"
+69-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:52:13-43
+70            android:screenOrientation="unspecified"
+70-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:53:13-52
+71            android:theme="@style/AppTheme.NoActionBar" />
+71-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:56:13-56
+72        <activity
+72-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:58:9-62:67
+73            android:name="com.megazone.megatong.presentation.ui.posting.HomePostingActivity"
+73-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:59:13-93
+74            android:launchMode="singleTop"
+74-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:60:13-43
+75            android:screenOrientation="unspecified"
+75-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:61:13-52
+76            android:theme="@style/AppTheme.NoActionBar.Posting" />
+76-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:62:13-64
+77        <activity
+77-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:64:9-68:67
+78            android:name="com.megazone.megatong.presentation.ui.profile.ProfileActivity"
+78-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:65:13-89
+79            android:launchMode="singleTop"
+79-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:66:13-43
+80            android:screenOrientation="unspecified"
+80-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:67:13-52
+81            android:theme="@style/AppTheme.NoActionBar.Profile" />
+81-->/Users/mz01-namkulho/StudioProjects/Megatong/app/src/main/AndroidManifest.xml:68:13-64
+82        <activity android:name="com.zhihu.matisse.ui.MatisseActivity" />
+82-->[com.zhihu.android:matisse:0.5.3-beta3] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/57c9c0d73035eecbb3ae3b4fe93cab28/jetified-matisse-0.5.3-beta3/AndroidManifest.xml:28:9-73
+82-->[com.zhihu.android:matisse:0.5.3-beta3] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/57c9c0d73035eecbb3ae3b4fe93cab28/jetified-matisse-0.5.3-beta3/AndroidManifest.xml:28:19-70
+83        <activity android:name="com.zhihu.matisse.internal.ui.AlbumPreviewActivity" />
+83-->[com.zhihu.android:matisse:0.5.3-beta3] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/57c9c0d73035eecbb3ae3b4fe93cab28/jetified-matisse-0.5.3-beta3/AndroidManifest.xml:29:9-87
+83-->[com.zhihu.android:matisse:0.5.3-beta3] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/57c9c0d73035eecbb3ae3b4fe93cab28/jetified-matisse-0.5.3-beta3/AndroidManifest.xml:29:19-84
+84        <activity android:name="com.zhihu.matisse.internal.ui.SelectedPreviewActivity" />
+84-->[com.zhihu.android:matisse:0.5.3-beta3] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/57c9c0d73035eecbb3ae3b4fe93cab28/jetified-matisse-0.5.3-beta3/AndroidManifest.xml:30:9-90
+84-->[com.zhihu.android:matisse:0.5.3-beta3] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/57c9c0d73035eecbb3ae3b4fe93cab28/jetified-matisse-0.5.3-beta3/AndroidManifest.xml:30:19-87
+85        <activity
+85-->[com.facebook.android:facebook-common:4.42.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/c30ddf1106cc3b0aa5e427b72bbf22bc/jetified-facebook-common-4.42.0/AndroidManifest.xml:29:9-32:66
+86            android:name="com.facebook.FacebookActivity"
+86-->[com.facebook.android:facebook-common:4.42.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/c30ddf1106cc3b0aa5e427b72bbf22bc/jetified-facebook-common-4.42.0/AndroidManifest.xml:30:13-57
+87            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+87-->[com.facebook.android:facebook-common:4.42.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/c30ddf1106cc3b0aa5e427b72bbf22bc/jetified-facebook-common-4.42.0/AndroidManifest.xml:31:13-96
+88            android:theme="@style/com_facebook_activity_theme" />
+88-->[com.facebook.android:facebook-common:4.42.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/c30ddf1106cc3b0aa5e427b72bbf22bc/jetified-facebook-common-4.42.0/AndroidManifest.xml:32:13-63
+89        <activity android:name="com.facebook.CustomTabMainActivity" />
+89-->[com.facebook.android:facebook-common:4.42.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/c30ddf1106cc3b0aa5e427b72bbf22bc/jetified-facebook-common-4.42.0/AndroidManifest.xml:33:9-71
+89-->[com.facebook.android:facebook-common:4.42.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/c30ddf1106cc3b0aa5e427b72bbf22bc/jetified-facebook-common-4.42.0/AndroidManifest.xml:33:19-68
+90        <activity android:name="com.facebook.CustomTabActivity" /> <!-- Needs to be explicitly declared on P+ -->
+90-->[com.facebook.android:facebook-common:4.42.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/c30ddf1106cc3b0aa5e427b72bbf22bc/jetified-facebook-common-4.42.0/AndroidManifest.xml:34:9-67
+90-->[com.facebook.android:facebook-common:4.42.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/c30ddf1106cc3b0aa5e427b72bbf22bc/jetified-facebook-common-4.42.0/AndroidManifest.xml:34:19-64
+91        <uses-library
+91-->[com.google.android.gms:play-services-maps:17.0.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9e208fd1aeb225d33fea9aecb916f6a6/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+92            android:name="org.apache.http.legacy"
+92-->[com.google.android.gms:play-services-maps:17.0.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9e208fd1aeb225d33fea9aecb916f6a6/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+93            android:required="false" />
+93-->[com.google.android.gms:play-services-maps:17.0.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9e208fd1aeb225d33fea9aecb916f6a6/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+94
+95        <activity
+95-->[com.google.android.gms:play-services-auth:17.0.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/60a6b66d2d6a40b0f14b12220cb4cfc3/jetified-play-services-auth-17.0.0/AndroidManifest.xml:23:9-27:75
+96            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+96-->[com.google.android.gms:play-services-auth:17.0.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/60a6b66d2d6a40b0f14b12220cb4cfc3/jetified-play-services-auth-17.0.0/AndroidManifest.xml:24:13-93
+97            android:excludeFromRecents="true"
+97-->[com.google.android.gms:play-services-auth:17.0.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/60a6b66d2d6a40b0f14b12220cb4cfc3/jetified-play-services-auth-17.0.0/AndroidManifest.xml:25:13-46
+98            android:exported="false"
+98-->[com.google.android.gms:play-services-auth:17.0.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/60a6b66d2d6a40b0f14b12220cb4cfc3/jetified-play-services-auth-17.0.0/AndroidManifest.xml:26:13-37
+99            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+99-->[com.google.android.gms:play-services-auth:17.0.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/60a6b66d2d6a40b0f14b12220cb4cfc3/jetified-play-services-auth-17.0.0/AndroidManifest.xml:27:13-72
+100        <!--
+101            Service handling Google Sign-In user revocation. For apps that do not integrate with
+102            Google Sign-In, this service will never be started.
+103        -->
+104        <service
+104-->[com.google.android.gms:play-services-auth:17.0.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/60a6b66d2d6a40b0f14b12220cb4cfc3/jetified-play-services-auth-17.0.0/AndroidManifest.xml:33:9-36:110
+105            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+105-->[com.google.android.gms:play-services-auth:17.0.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/60a6b66d2d6a40b0f14b12220cb4cfc3/jetified-play-services-auth-17.0.0/AndroidManifest.xml:34:13-89
+106            android:exported="true"
+106-->[com.google.android.gms:play-services-auth:17.0.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/60a6b66d2d6a40b0f14b12220cb4cfc3/jetified-play-services-auth-17.0.0/AndroidManifest.xml:35:13-36
+107            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+107-->[com.google.android.gms:play-services-auth:17.0.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/60a6b66d2d6a40b0f14b12220cb4cfc3/jetified-play-services-auth-17.0.0/AndroidManifest.xml:36:13-107
+108        <service
+108-->[androidx.work:work-gcm:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/261749abc7a94fcfb412d83574d73b9d/jetified-work-gcm-2.3.0-alpha03/AndroidManifest.xml:26:9-35:19
+109            android:name="androidx.work.impl.background.gcm.WorkManagerGcmService"
+109-->[androidx.work:work-gcm:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/261749abc7a94fcfb412d83574d73b9d/jetified-work-gcm-2.3.0-alpha03/AndroidManifest.xml:27:13-83
+110            android:directBootAware="false"
+110-->[androidx.work:work-gcm:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/261749abc7a94fcfb412d83574d73b9d/jetified-work-gcm-2.3.0-alpha03/AndroidManifest.xml:28:13-44
+111            android:exported="@bool/enable_gcm_scheduler_default"
+111-->[androidx.work:work-gcm:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/261749abc7a94fcfb412d83574d73b9d/jetified-work-gcm-2.3.0-alpha03/AndroidManifest.xml:29:13-66
+112            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" >
+112-->[androidx.work:work-gcm:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/261749abc7a94fcfb412d83574d73b9d/jetified-work-gcm-2.3.0-alpha03/AndroidManifest.xml:30:13-93
+113            <intent-filter>
+113-->[androidx.work:work-gcm:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/261749abc7a94fcfb412d83574d73b9d/jetified-work-gcm-2.3.0-alpha03/AndroidManifest.xml:32:13-34:29
+114                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+114-->[androidx.work:work-gcm:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/261749abc7a94fcfb412d83574d73b9d/jetified-work-gcm-2.3.0-alpha03/AndroidManifest.xml:33:17-87
+114-->[androidx.work:work-gcm:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/261749abc7a94fcfb412d83574d73b9d/jetified-work-gcm-2.3.0-alpha03/AndroidManifest.xml:33:25-84
+115            </intent-filter>
+116        </service>
+117
+118        <activity
+118-->[com.google.firebase:firebase-auth:19.1.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/88bf9ead18e42798d5644d694f22edbd/jetified-firebase-auth-19.1.0/AndroidManifest.xml:24:9-31:50
+119            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+119-->[com.google.firebase:firebase-auth:19.1.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/88bf9ead18e42798d5644d694f22edbd/jetified-firebase-auth-19.1.0/AndroidManifest.xml:25:13-85
+120            android:excludeFromRecents="true"
+120-->[com.google.firebase:firebase-auth:19.1.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/88bf9ead18e42798d5644d694f22edbd/jetified-firebase-auth-19.1.0/AndroidManifest.xml:26:13-46
+121            android:exported="true"
+121-->[com.google.firebase:firebase-auth:19.1.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/88bf9ead18e42798d5644d694f22edbd/jetified-firebase-auth-19.1.0/AndroidManifest.xml:27:13-36
+122            android:launchMode="singleTask"
+122-->[com.google.firebase:firebase-auth:19.1.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/88bf9ead18e42798d5644d694f22edbd/jetified-firebase-auth-19.1.0/AndroidManifest.xml:28:13-44
+123            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+123-->[com.google.firebase:firebase-auth:19.1.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/88bf9ead18e42798d5644d694f22edbd/jetified-firebase-auth-19.1.0/AndroidManifest.xml:29:13-102
+124            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+124-->[com.google.firebase:firebase-auth:19.1.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/88bf9ead18e42798d5644d694f22edbd/jetified-firebase-auth-19.1.0/AndroidManifest.xml:30:13-72
+125
+126        <service
+126-->[com.google.firebase:firebase-auth:19.1.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/88bf9ead18e42798d5644d694f22edbd/jetified-firebase-auth-19.1.0/AndroidManifest.xml:33:9-39:19
+127            android:name="com.google.firebase.components.ComponentDiscoveryService"
+127-->[com.google.firebase:firebase-auth:19.1.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/88bf9ead18e42798d5644d694f22edbd/jetified-firebase-auth-19.1.0/AndroidManifest.xml:34:13-84
+128            android:directBootAware="true"
+128-->[com.google.firebase:firebase-common:19.2.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/e0d084ad1922630458861c96c3388c72/jetified-firebase-common-19.2.0/AndroidManifest.xml:15:13-43
+129            android:exported="false" >
+129-->[com.google.firebase:firebase-auth:19.1.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/88bf9ead18e42798d5644d694f22edbd/jetified-firebase-auth-19.1.0/AndroidManifest.xml:35:13-37
+130            <meta-data
+130-->[com.google.firebase:firebase-auth:19.1.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/88bf9ead18e42798d5644d694f22edbd/jetified-firebase-auth-19.1.0/AndroidManifest.xml:36:13-38:85
+131                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+131-->[com.google.firebase:firebase-auth:19.1.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/88bf9ead18e42798d5644d694f22edbd/jetified-firebase-auth-19.1.0/AndroidManifest.xml:37:17-109
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.firebase:firebase-auth:19.1.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/88bf9ead18e42798d5644d694f22edbd/jetified-firebase-auth-19.1.0/AndroidManifest.xml:38:17-82
+133            <meta-data
+133-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/21f65e4f35bbcaf9a923927450dbad13/jetified-play-services-measurement-api-17.2.1/AndroidManifest.xml:30:13-32:85
+134                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+134-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/21f65e4f35bbcaf9a923927450dbad13/jetified-play-services-measurement-api-17.2.1/AndroidManifest.xml:31:17-139
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/21f65e4f35bbcaf9a923927450dbad13/jetified-play-services-measurement-api-17.2.1/AndroidManifest.xml:32:17-82
+136            <meta-data
+136-->[com.google.firebase:firebase-iid:20.0.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9f99b4519a973700a7129b01b0e4a58d/jetified-firebase-iid-20.0.1/AndroidManifest.xml:32:13-34:85
+137                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+137-->[com.google.firebase:firebase-iid:20.0.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9f99b4519a973700a7129b01b0e4a58d/jetified-firebase-iid-20.0.1/AndroidManifest.xml:33:17-96
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.firebase:firebase-iid:20.0.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9f99b4519a973700a7129b01b0e4a58d/jetified-firebase-iid-20.0.1/AndroidManifest.xml:34:17-82
+139        </service>
+140        <!--
+141             FirebaseMessagingService performs security checks at runtime,
+142             but set to not exported to explicitly avoid allowing another app to call it.
+143        -->
+144        <service
+144-->[com.google.firebase:firebase-messaging:20.0.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/b9ff2e147a884308f56cb2b32b0bf05c/jetified-firebase-messaging-20.0.1/AndroidManifest.xml:28:9-34:19
+145            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+145-->[com.google.firebase:firebase-messaging:20.0.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/b9ff2e147a884308f56cb2b32b0bf05c/jetified-firebase-messaging-20.0.1/AndroidManifest.xml:29:13-82
+146            android:exported="false" >
+146-->[com.google.firebase:firebase-messaging:20.0.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/b9ff2e147a884308f56cb2b32b0bf05c/jetified-firebase-messaging-20.0.1/AndroidManifest.xml:30:13-37
+147            <intent-filter android:priority="-500" >
+147-->[com.google.firebase:firebase-messaging:20.0.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/b9ff2e147a884308f56cb2b32b0bf05c/jetified-firebase-messaging-20.0.1/AndroidManifest.xml:31:13-33:29
+147-->[com.google.firebase:firebase-messaging:20.0.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/b9ff2e147a884308f56cb2b32b0bf05c/jetified-firebase-messaging-20.0.1/AndroidManifest.xml:31:28-51
+148                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+148-->[com.google.firebase:firebase-messaging:20.0.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/b9ff2e147a884308f56cb2b32b0bf05c/jetified-firebase-messaging-20.0.1/AndroidManifest.xml:32:17-78
+148-->[com.google.firebase:firebase-messaging:20.0.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/b9ff2e147a884308f56cb2b32b0bf05c/jetified-firebase-messaging-20.0.1/AndroidManifest.xml:32:25-75
+149            </intent-filter>
+150        </service>
+151
+152        <receiver
+152-->[com.google.firebase:firebase-iid:20.0.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9f99b4519a973700a7129b01b0e4a58d/jetified-firebase-iid-20.0.1/AndroidManifest.xml:37:9-44:20
+153            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+153-->[com.google.firebase:firebase-iid:20.0.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9f99b4519a973700a7129b01b0e4a58d/jetified-firebase-iid-20.0.1/AndroidManifest.xml:38:13-78
+154            android:exported="true"
+154-->[com.google.firebase:firebase-iid:20.0.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9f99b4519a973700a7129b01b0e4a58d/jetified-firebase-iid-20.0.1/AndroidManifest.xml:39:13-36
+155            android:permission="com.google.android.c2dm.permission.SEND" >
+155-->[com.google.firebase:firebase-iid:20.0.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9f99b4519a973700a7129b01b0e4a58d/jetified-firebase-iid-20.0.1/AndroidManifest.xml:40:13-73
+156            <intent-filter>
+156-->[com.google.firebase:firebase-iid:20.0.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9f99b4519a973700a7129b01b0e4a58d/jetified-firebase-iid-20.0.1/AndroidManifest.xml:41:13-43:29
+157                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+157-->[com.google.firebase:firebase-iid:20.0.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9f99b4519a973700a7129b01b0e4a58d/jetified-firebase-iid-20.0.1/AndroidManifest.xml:42:17-81
+157-->[com.google.firebase:firebase-iid:20.0.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9f99b4519a973700a7129b01b0e4a58d/jetified-firebase-iid-20.0.1/AndroidManifest.xml:42:25-78
+158            </intent-filter>
+159        </receiver>
+160
+161        <activity
+161-->[com.google.android.gms:play-services-base:17.1.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/54747a7ba36a51c377cd7fe77ed20fe3/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+162            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+162-->[com.google.android.gms:play-services-base:17.1.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/54747a7ba36a51c377cd7fe77ed20fe3/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+163            android:exported="false"
+163-->[com.google.android.gms:play-services-base:17.1.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/54747a7ba36a51c377cd7fe77ed20fe3/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+164            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+164-->[com.google.android.gms:play-services-base:17.1.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/54747a7ba36a51c377cd7fe77ed20fe3/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+165
+166        <provider
+166-->[com.google.firebase:firebase-common:19.2.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/e0d084ad1922630458861c96c3388c72/jetified-firebase-common-19.2.0/AndroidManifest.xml:19:9-23:39
+167            android:name="com.google.firebase.provider.FirebaseInitProvider"
+167-->[com.google.firebase:firebase-common:19.2.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/e0d084ad1922630458861c96c3388c72/jetified-firebase-common-19.2.0/AndroidManifest.xml:20:13-77
+168            android:authorities="com.megazone.megatong.firebaseinitprovider"
+168-->[com.google.firebase:firebase-common:19.2.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/e0d084ad1922630458861c96c3388c72/jetified-firebase-common-19.2.0/AndroidManifest.xml:21:13-72
+169            android:exported="false"
+169-->[com.google.firebase:firebase-common:19.2.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/e0d084ad1922630458861c96c3388c72/jetified-firebase-common-19.2.0/AndroidManifest.xml:22:13-37
+170            android:initOrder="100" />
+170-->[com.google.firebase:firebase-common:19.2.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/e0d084ad1922630458861c96c3388c72/jetified-firebase-common-19.2.0/AndroidManifest.xml:23:13-36
+171
+172        <receiver
+172-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:29:9-33:20
+173            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+173-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:30:13-85
+174            android:enabled="true"
+174-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:31:13-35
+175            android:exported="false" >
+175-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:32:13-37
+176        </receiver>
+177        <receiver
+177-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:34:9-42:20
+178            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+178-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:35:13-100
+179            android:enabled="true"
+179-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:36:13-35
+180            android:exported="true"
+180-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:37:13-36
+181            android:permission="android.permission.INSTALL_PACKAGES" >
+181-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:38:13-69
+182            <intent-filter>
+182-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:39:13-41:29
+183                <action android:name="com.android.vending.INSTALL_REFERRER" />
+183-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:40:17-79
+183-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:40:25-76
+184            </intent-filter>
+185        </receiver>
+186
+187        <service
+187-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:44:9-47:40
+188            android:name="com.google.android.gms.measurement.AppMeasurementService"
+188-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:45:13-84
+189            android:enabled="true"
+189-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:46:13-35
+190            android:exported="false" />
+190-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:47:13-37
+191        <service
+191-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:48:9-52:72
+192            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+192-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:49:13-87
+193            android:enabled="true"
+193-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:50:13-35
+194            android:exported="false"
+194-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:51:13-37
+195            android:permission="android.permission.BIND_JOB_SERVICE" />
+195-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/3cdef28ee66c8c7acc5f4f0f5320cec1/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:52:13-69
+196
+197        <meta-data
+197-->[com.google.android.exoplayer:extension-ima:2.10.7] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/28cd4dba080727fa10b39eb85c6d11d1/jetified-extension-ima-2.10.7/AndroidManifest.xml:25:9-27:36
+198            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+198-->[com.google.android.exoplayer:extension-ima:2.10.7] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/28cd4dba080727fa10b39eb85c6d11d1/jetified-extension-ima-2.10.7/AndroidManifest.xml:26:13-69
+199            android:value="true" />
+199-->[com.google.android.exoplayer:extension-ima:2.10.7] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/28cd4dba080727fa10b39eb85c6d11d1/jetified-extension-ima-2.10.7/AndroidManifest.xml:27:13-33
+200        <meta-data
+200-->[com.google.android.exoplayer:extension-ima:2.10.7] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/28cd4dba080727fa10b39eb85c6d11d1/jetified-extension-ima-2.10.7/AndroidManifest.xml:28:9-30:69
+201            android:name="com.google.android.gms.version"
+201-->[com.google.android.exoplayer:extension-ima:2.10.7] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/28cd4dba080727fa10b39eb85c6d11d1/jetified-extension-ima-2.10.7/AndroidManifest.xml:29:13-58
+202            android:value="@integer/google_play_services_version" />
+202-->[com.google.android.exoplayer:extension-ima:2.10.7] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/28cd4dba080727fa10b39eb85c6d11d1/jetified-extension-ima-2.10.7/AndroidManifest.xml:30:13-66
+203        <!--
+204         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+205         with the application context. This config is merged in with the host app's manifest,
+206         but there can only be one provider with the same authority activated at any given
+207         point; so if the end user has two or more different apps that use Facebook SDK, only the
+208         first one will be able to use the provider. To work around this problem, we use the
+209         following placeholder in the authority to identify each host application as if it was
+210         a completely different provider.
+211        -->
+212        <provider
+212-->[com.facebook.android:facebook-core:4.42.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9dc0b9a5f1b9f229e4977d74a03105fd/jetified-facebook-core-4.42.0/AndroidManifest.xml:39:9-42:40
+213            android:name="com.facebook.internal.FacebookInitProvider"
+213-->[com.facebook.android:facebook-core:4.42.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9dc0b9a5f1b9f229e4977d74a03105fd/jetified-facebook-core-4.42.0/AndroidManifest.xml:40:13-70
+214            android:authorities="com.megazone.megatong.FacebookInitProvider"
+214-->[com.facebook.android:facebook-core:4.42.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9dc0b9a5f1b9f229e4977d74a03105fd/jetified-facebook-core-4.42.0/AndroidManifest.xml:41:13-72
+215            android:exported="false" />
+215-->[com.facebook.android:facebook-core:4.42.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9dc0b9a5f1b9f229e4977d74a03105fd/jetified-facebook-core-4.42.0/AndroidManifest.xml:42:13-37
+216
+217        <receiver
+217-->[com.facebook.android:facebook-core:4.42.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9dc0b9a5f1b9f229e4977d74a03105fd/jetified-facebook-core-4.42.0/AndroidManifest.xml:44:9-50:20
+218            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+218-->[com.facebook.android:facebook-core:4.42.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9dc0b9a5f1b9f229e4977d74a03105fd/jetified-facebook-core-4.42.0/AndroidManifest.xml:45:13-86
+219            android:exported="false" >
+219-->[com.facebook.android:facebook-core:4.42.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9dc0b9a5f1b9f229e4977d74a03105fd/jetified-facebook-core-4.42.0/AndroidManifest.xml:46:13-37
+220            <intent-filter>
+220-->[com.facebook.android:facebook-core:4.42.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9dc0b9a5f1b9f229e4977d74a03105fd/jetified-facebook-core-4.42.0/AndroidManifest.xml:47:13-49:29
+221                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+221-->[com.facebook.android:facebook-core:4.42.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9dc0b9a5f1b9f229e4977d74a03105fd/jetified-facebook-core-4.42.0/AndroidManifest.xml:48:17-95
+221-->[com.facebook.android:facebook-core:4.42.0] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/9dc0b9a5f1b9f229e4977d74a03105fd/jetified-facebook-core-4.42.0/AndroidManifest.xml:48:25-92
+222            </intent-filter>
+223        </receiver>
+224
+225        <provider
+225-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:31:9-37:35
+226            android:name="androidx.work.impl.WorkManagerInitializer"
+226-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:32:13-69
+227            android:authorities="com.megazone.megatong.workmanager-init"
+227-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:33:13-68
+228            android:directBootAware="false"
+228-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:34:13-44
+229            android:exported="false"
+229-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:35:13-37
+230            android:multiprocess="true" />
+230-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:36:13-40
+231
+232        <service
+232-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:39:9-44:35
+233            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+233-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:40:13-88
+234            android:directBootAware="false"
+234-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:41:13-44
+235            android:enabled="@bool/enable_system_alarm_service_default"
+235-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:42:13-72
+236            android:exported="false" />
+236-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:43:13-37
+237        <service
+237-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:45:9-51:35
+238            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+238-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:46:13-84
+239            android:directBootAware="false"
+239-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:47:13-44
+240            android:enabled="@bool/enable_system_job_service_default"
+240-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:48:13-70
+241            android:exported="true"
+241-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:49:13-36
+242            android:permission="android.permission.BIND_JOB_SERVICE" />
+242-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:50:13-69
+243        <service
+243-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:52:9-57:35
+244            android:name="androidx.work.impl.foreground.SystemForegroundService"
+244-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:53:13-81
+245            android:directBootAware="false"
+245-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:54:13-44
+246            android:enabled="@bool/enable_system_foreground_service_default"
+246-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:55:13-77
+247            android:exported="false" />
+247-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:56:13-37
+248
+249        <receiver
+249-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:59:9-64:35
+250            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+250-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:60:13-88
+251            android:directBootAware="false"
+251-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:61:13-44
+252            android:enabled="true"
+252-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:62:13-35
+253            android:exported="false" />
+253-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:63:13-37
+254        <receiver
+254-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:65:9-75:20
+255            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+255-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:66:13-106
+256            android:directBootAware="false"
+256-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:67:13-44
+257            android:enabled="false"
+257-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:68:13-36
+258            android:exported="false" >
+258-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:69:13-37
+259            <intent-filter>
+259-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:71:13-74:29
+260                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+260-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:72:17-87
+260-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:72:25-84
+261                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+261-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:73:17-90
+261-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:73:25-87
+262            </intent-filter>
+263        </receiver>
+264        <receiver
+264-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:76:9-86:20
+265            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+265-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:77:13-104
+266            android:directBootAware="false"
+266-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:78:13-44
+267            android:enabled="false"
+267-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:79:13-36
+268            android:exported="false" >
+268-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:80:13-37
+269            <intent-filter>
+269-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:82:13-85:29
+270                <action android:name="android.intent.action.BATTERY_OKAY" />
+270-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:83:17-77
+270-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:83:25-74
+271                <action android:name="android.intent.action.BATTERY_LOW" />
+271-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:84:17-76
+271-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:84:25-73
+272            </intent-filter>
+273        </receiver>
+274        <receiver
+274-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:87:9-97:20
+275            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+275-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:88:13-104
+276            android:directBootAware="false"
+276-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:89:13-44
+277            android:enabled="false"
+277-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:90:13-36
+278            android:exported="false" >
+278-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:91:13-37
+279            <intent-filter>
+279-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:93:13-96:29
+280                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+280-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:94:17-83
+280-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:94:25-80
+281                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+281-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:95:17-82
+281-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:95:25-79
+282            </intent-filter>
+283        </receiver>
+284        <receiver
+284-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:98:9-107:20
+285            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+285-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:99:13-103
+286            android:directBootAware="false"
+286-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:100:13-44
+287            android:enabled="false"
+287-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:101:13-36
+288            android:exported="false" >
+288-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:102:13-37
+289            <intent-filter>
+289-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:104:13-106:29
+290                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+290-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:105:17-79
+290-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:105:25-76
+291            </intent-filter>
+292        </receiver>
+293        <receiver
+293-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:108:9-119:20
+294            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+294-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:109:13-88
+295            android:directBootAware="false"
+295-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:110:13-44
+296            android:enabled="false"
+296-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:111:13-36
+297            android:exported="false" >
+297-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:112:13-37
+298            <intent-filter>
+298-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:114:13-118:29
+299                <action android:name="android.intent.action.BOOT_COMPLETED" />
+299-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:115:17-79
+299-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:115:25-76
+300                <action android:name="android.intent.action.TIME_SET" />
+300-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:116:17-73
+300-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:116:25-70
+301                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+301-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:117:17-81
+301-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:117:25-78
+302            </intent-filter>
+303        </receiver>
+304        <receiver
+304-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:120:9-129:20
+305            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+305-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:121:13-99
+306            android:directBootAware="false"
+306-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:122:13-44
+307            android:enabled="@bool/enable_system_alarm_service_default"
+307-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:123:13-72
+308            android:exported="false" >
+308-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:124:13-37
+309            <intent-filter>
+309-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:126:13-128:29
+310                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+310-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:127:17-98
+310-->[androidx.work:work-runtime:2.3.0-alpha03] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/2b4154dd4524aeb655c7bac226611c9c/work-runtime-2.3.0-alpha03/AndroidManifest.xml:127:25-95
+311            </intent-filter>
+312        </receiver>
+313
+314        <provider
+314-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/4bb3a11a61c2fc047be9da452ab073be/jetified-lifecycle-process-2.2.0-rc02/AndroidManifest.xml:25:9-29:43
+315            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+315-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/4bb3a11a61c2fc047be9da452ab073be/jetified-lifecycle-process-2.2.0-rc02/AndroidManifest.xml:26:13-79
+316            android:authorities="com.megazone.megatong.lifecycle-process"
+316-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/4bb3a11a61c2fc047be9da452ab073be/jetified-lifecycle-process-2.2.0-rc02/AndroidManifest.xml:27:13-69
+317            android:exported="false"
+317-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/4bb3a11a61c2fc047be9da452ab073be/jetified-lifecycle-process-2.2.0-rc02/AndroidManifest.xml:28:13-37
+318            android:multiprocess="true" />
+318-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/4bb3a11a61c2fc047be9da452ab073be/jetified-lifecycle-process-2.2.0-rc02/AndroidManifest.xml:29:13-40
+319
+320        <service
+320-->[androidx.room:room-runtime:2.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/de89247d01018e4a2da803cc7368d6fd/room-runtime-2.2.1/AndroidManifest.xml:25:9-27:40
+321            android:name="androidx.room.MultiInstanceInvalidationService"
+321-->[androidx.room:room-runtime:2.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/de89247d01018e4a2da803cc7368d6fd/room-runtime-2.2.1/AndroidManifest.xml:26:13-74
+322            android:exported="false" />
+322-->[androidx.room:room-runtime:2.2.1] /Users/mz01-namkulho/.gradle/caches/transforms-2/files-2.1/de89247d01018e4a2da803cc7368d6fd/room-runtime-2.2.1/AndroidManifest.xml:27:13-37
+323    </application>
+324
+325</manifest>

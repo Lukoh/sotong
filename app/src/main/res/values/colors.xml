@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FAFAFA</color>
+    <color name="colorPrimaryDark">#E0E0E0</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorDefaultDrawable">#696969</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="blackHard">#DE000000</color>
+    <color name="blackLBrightLight">#8A000000</color>
+    <color name="blackLight">#100914</color>
+    <color name="blackBright">#151520</color>
+    <color name="blackLightDark">#221122</color>
+    <color name="black1">#454545</color>
+    <color name="gray">#868686</color>
+    <color name="grayLightTransparent">#80E9ECEF</color>
+    <color name="gray1">#727272</color>
+    <color name="grayDark">#646262</color>
+    <color name="grayDarkHard">#4D4D4D</color>
+    <color name="grayHardDark">#0CF8F9FA</color>
+    <color name="gray5">#454545</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whiteLight">#FDFDFD</color>
+    <color name="whiteHard">#FAFAFA</color>
+    <color name="orange1">#FFFFD21C</color>
+    <color name="orangeDark">#FF8B1D</color>
+    <color name="redLight">#E43231</color>
+
+    <color name="colorFabNormal">#2978CA</color>
+    <color name="colorFabPressed">#2950CA</color>
+    <color name="colorFabRipple">#3D6FD1</color>
+    <color name="colorFabNormalTransparent">#50000000</color>
+    <color name="colorFabUptoNormal">#50000000</color>
+
+    <color name="colorHashTag">#DE4285F4</color>
+
+
+    //Custom-View's color
+    <color name="colorIndicatorSelected">#3897F0</color>
+    <color name="colorIndicatorUnselected">#B2B2B2</color>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ForegroundView">
+        <attr name="android:foreground" />
+        <attr name="android:foregroundGravity" />
+    </declare-styleable>
+
+    <declare-styleable name="ItemIndicator">
+        <attr format="dimension" name="indicator_spacing"/>
+        <attr format="dimension" name="indicator_bound"/>
+        <attr format="dimension" name="indicator_size"/>
+        <attr format="dimension" name="indicator_max_count"/>
+        <attr format="integer" name="anim_duration"/>
+        <attr format="reference" name="anim_interpolator"/>
+        <attr format="color" name="unselected_color"/>
+        <attr format="color" name="selected_color"/>
+    </declare-styleable>
+</resources>
