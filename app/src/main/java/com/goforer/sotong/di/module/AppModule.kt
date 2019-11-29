@@ -99,7 +99,7 @@ class AppModule {
 
     @Singleton
     @Provides
-    internal fun provideCache(app: Application) = Room.databaseBuilder(app, Cache::class.java, "megatong.db").build()
+    internal fun provideCache(app: Application) = Room.databaseBuilder(app, Cache::class.java, "sotong.db").build()
 
     @Singleton
     @Provides
